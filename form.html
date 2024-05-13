@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .form-div {
+        border: 5px solid green;
+        padding: 2rem;
+        border-radius: 0.5rem;
+      }
+      .child-form-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+      }
+      
+     
+      .button button {
+        width: 100%;
+      }
+      input {
+        height: 2.4rem;
+       
+      }
+
+      .child-form-div .child-form-div-child {
+        padding: 0.5rem;
+      }
+
+      .checkbox-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="get" class="form">
+      <div class="form-div">
+        <div>
+          <h1>Registeration</h1>
+        </div>
+        <div class="child-form-div">
+          <div class="child-form-div-child">
+            <label for="fullname">Full Name</label>
+            <br />
+            <input type="text" placeholder="fullname..." name="fullname" />
+          </div>
+
+          <div class="child-form-div-child">
+            <label for="username">User Name</label>
+            <br />
+            <input type="text" placeholder="username..." name="username" />
+          </div>
+        </div>
+        <div class="child-form-div">
+          <div class="child-form-div-child">
+            <label for="email">Email</label>
+            <br>
+            <input type="email" placeholder="email..." name="email" />
+          </div>
+
+          <div class="child-form-div-child">
+            <label for="phonenumber">Phone Number</label>
+            <br>
+            <input
+              type="text"
+              placeholder="phonenumber..."
+              name="phonenumber"
+            />
+          </div>
+        </div>
+
+        <div class="child-form-div">
+          <div class="child-form-div-child">
+            <label for="password">Password</label>
+            <br>
+            <input type="password" placeholder="password" name="password" />
+          </div>
+
+          <div class="child-form-div-child">
+            <label for="confirmpassword">Confirm password</label>
+            <br>
+            <input type="password" placeholder="confirmpassword..." />
+          </div>
+        </div>
+        <div class="child-form-div">
+          <div class="checkbox-div">
+            <input type="checkbox" name="male" />
+            <label for="male">Male</label>
+          </div>
+          <div class="checkbox-div">
+            <input type="checkbox" name="female" />
+            <label for="female">female</label>
+          </div>
+          <div class="checkbox-div">
+            <input type="checkbox" name="no-one" />
+            <label for="no-one">Perfer Not to say</label>
+          </div>
+        </div>
+
+        <div class="button">
+          <button>Register</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
